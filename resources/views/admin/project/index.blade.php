@@ -32,13 +32,13 @@
                         {{ $projects->id }}
                     </div>
                 </td>
-                <td class="text-break">
-                   <div class="height-overflow">
+                <td>
+                   <div>
                         {{ $projects->title }}
                    </div>
                 </td>
-                <td class="text-break height-overflow">
-                  <div class="height-overflow">
+                <td>
+                  <div>
                     {{ $projects->slug }}
                   </div>
                 </td>

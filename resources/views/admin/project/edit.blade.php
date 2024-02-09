@@ -37,6 +37,13 @@
                     <div class="alert alert-danger">{{ $message }}</div>
                 @enderror
             </div>
+            <div class="mb-3 col-12">
+                <select class=" ps-2 pt-1 pb-1 col-8 border-danger-b rounded" aria-label="Default select example" name="type_id">
+                    @foreach ( $type as $types )
+                        <option value="{{$types->id}}" @if (old('types_id', $project->type_id) == $types->id) selected @endif>{{$types->name}}</option>
+                    @endforeach
+                </select>
+            </div>
             <div class="col-12">
                 <button type="submit" class="border-0 ps-2 pe-2 pb-1 pt-1 text-white button-create">Sign in</button>
             </div>

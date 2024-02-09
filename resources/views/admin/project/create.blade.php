@@ -36,8 +36,8 @@
                 <div class="alert alert-danger">{{ $message }}</div>
             @enderror
         </div>
-        <div>
-            <select class="form-select" aria-label="Default select example" name="type_id">
+        <div class="mb-3 col-12">
+            <select class=" ps-2 pt-1 pb-1 col-8 border-danger-b rounded" aria-label="Default select example" name="type_id">
                 @foreach ( $type as $types )
                     <option value="{{$types->id}}" @if (old('types_id') == $types->id) selected @endif>{{$types->name}}</option>
                 @endforeach
