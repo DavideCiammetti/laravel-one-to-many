@@ -17,6 +17,7 @@ class TypesTableSeeder extends Seeder
         $types = ['Frontend', 'Backend', 'FullStack'];
 
         foreach ($types as $type) {
+            
             $new_type = new Type();
 
             $new_type->name = $type;
