@@ -15,6 +15,9 @@
             <div>
                 immagine {{$project->img}}
             </div>
+            <div>
+                <p>{{$project->type->name}}</p>
+            </div>
         </div>
       </div>
 @endsection
