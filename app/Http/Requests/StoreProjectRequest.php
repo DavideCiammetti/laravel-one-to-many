@@ -28,6 +28,7 @@ class StoreProjectRequest extends FormRequest
             'staff'=> 'nullable',
             'img'=> 'required',
             'slug'=> 'nullable',
+            'type_id'=> ['nullable', 'exists:types,id'],
         ];
     }
     public function message(){
@@ -37,7 +38,7 @@ class StoreProjectRequest extends FormRequest
             'title.max'=> 'massimo 100 caratteri',
             'title.min'=> 'minimo 5 caratteri',
             'img.required'=> 'campo obbligatorio',
-            // 'img.extensions'=>'formato errato',
+            'type_id.exists'=> 'il campo type è errato',
         ];
     }
 }

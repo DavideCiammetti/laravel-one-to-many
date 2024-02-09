@@ -28,15 +28,21 @@
             @foreach ($project as $projects)
             <tr>
                 <td>
-                    {{ $projects->id }}
+                    <div>
+                        {{ $projects->id }}
+                    </div>
                 </td>
-                <td>
-                    {{ $projects->title }}
+                <td class="text-break">
+                   <div class="height-overflow">
+                        {{ $projects->title }}
+                   </div>
                 </td>
-                <td>
+                <td class="text-break height-overflow">
+                  <div class="height-overflow">
                     {{ $projects->slug }}
+                  </div>
                 </td>
-                <td>
+                <td class="text-break">
                     <div class="height-overflow">
                         {{ $projects->description }}
                     </div>

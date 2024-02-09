@@ -15,8 +15,9 @@
             <div>
                 immagine {{$project->img}}
             </div>
+            <hr class="border border-danger border-2 opacity-100">
             <div>
-                <p>{{$project->type->name}}</p>
+                <p> Categoria: {{$project->type?->name}}</p>
             </div>
         </div>
       </div>
