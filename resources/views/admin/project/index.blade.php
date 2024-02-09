@@ -52,7 +52,13 @@
                         <button type="submit" class="font-s-12-w-60 border-0 text-bg-primary mb-1">
                             <a class="text-black nav-link " href="{{ route('admin.projects.show', $projects->slug) }}">Info</a>
                         </button>
-                         xc
+                        <div>
+                            <form action="{{route('admin.projects.destroy', $projects->slug)}}" method="POST" class="mb-2">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit" class="font-s-12-w-60 border-0 bg-danger">Delete</button>
+                            </form>
+                          </div>
                         <button type="submit" class="font-s-12-w-60 border-0 text-bg-warning">
                             <a class="text-black nav-link "href="{{ route('admin.projects.edit',  $projects->slug) }}">Update</a>
                         </button>
