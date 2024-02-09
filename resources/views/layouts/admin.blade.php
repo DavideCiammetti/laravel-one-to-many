@@ -75,6 +75,12 @@
                                     <i class="fa-solid fa-plus me-2"></i>Add project
                                 </a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white "
+                                    href="{{ route('admin.types.create') }}">
+                                    <i class="fa-solid fa-plus me-2"></i>Add types
+                                </a>
+                            </li>
                         </ul>
 
 
